@@ -75,3 +75,18 @@ const huCounties = [
   "Zala",
 ];
 
+selectCountry.addEventListener('change', () => {
+  let list = ''
+  if (selectCountry.value === "USA") {
+    usStates.forEach(item => {
+      list += "<option>" + item + "</option>"
+    });
+  } else if (selectCountry.value ==="Magyarország") {
+    huCounties.forEach (item => {
+      list += "<option>" + item + "</option>"
+    });
+  } else {
+    list = "<option>Choose...</option>"
+  }
+  selectState.innerHTML = list;
+});
