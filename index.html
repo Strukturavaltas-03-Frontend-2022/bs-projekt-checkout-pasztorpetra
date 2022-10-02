@@ -76,15 +76,15 @@
                 </div>
                 <div class="mb-3">
                   <label for="username">Username</label>
-                  <div class="input-group mb-3">
+                  <div class="input-group">
                     <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">@</span>
+                      <span class="input-group-text">@</span>
                     </div>
                     <input type="text" class="form-control" placeholder="Username" id="username">
                   </div>
                 </div>
                 <div class="mb-3">
-                  <label for="email">E-mail <span class="text-muted">(Optional)</span></label>
+                  <label for="email">Email <span class="text-muted">(Optional)</span></label>
                   <input type="email" class="form-control" id="email" placeholder="you@example.com">
                 </div>
                 <div class="mb-3">
@@ -95,22 +95,72 @@
                   <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
                   <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
                 </div>
-                <!-- ez a rész még kell-->
                 <div class="row">
                   <div class="col-md-5 mb-3">
                     <label for="country">Country</label>
+                    <select class="custom-select d-block w-100" id="country">
+                        <option value>Choose...</option>
+                        <option>United States</option>
+                        <option>Hungary</option>
+                    </select>
                   </div>
-                  <div class="col-md-4 mb-3"></div>
-                  <div class="col-md-3 mb-3"></div>
+                  <div class="col-md-4 mb-3">
+                    <label for="state">State</label>
+                    <select class="custom-select d-block w-100" id="state">
+                        <option value>Choose...</option>
+                        <!--JS kódot megcsinálni-->
+                        <option>...</option>
+                        <!--JS kódot megcsinálni-->
+                    </select>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="zip">Zip</label>
+                    <input type="text" class="form-control" id="zip" >
+                  </div>
                 </div>
-                <div class="custom-checkbox">
-
-                </div>
-                <!--idáig-->
-                
-            </div>
+              </div>
           </form>
         </div>
+
+                <hr class="mb-4">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="form-control-input" id="shipping-address">
+                  <label for="shipping-address" class="custom-control-label">
+                    Shipping address is the same as my billing address
+                  </label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="form-control-input" id="save-information">
+                  <label for="save-information" class="custom-control-label">
+                    Save this information for next time
+                  </label>
+                </div>
+                <hr class="mb-4">
+
+                <h4 class="mb-3">Payment</h4>
+                <div class="d-block my-3">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="creditCard" name="payment" checked>
+                    <label for="creditCard" class="custom-control-label">
+                      Credit card
+                    </label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="debitCard" name="payment">
+                    <label for="debitCard" class="custom-control-label">
+                      Debit card
+                    </label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="payPal" name="payment">
+                    <label for="payPal" class="custom-control-label">
+                      PayPal
+                    </label>
+                  </div>
+                </div>
+              
+            
+        
       </main>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
