@@ -119,8 +119,8 @@
                   </div>
                 </div>
               </div>
-          </form>
-        </div>
+          
+        
 
                 <hr class="mb-4">
                 <div class="custom-control custom-checkbox">
@@ -158,9 +158,31 @@
                     </label>
                   </div>
                 </div>
-              
-            
-        
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="card-name">Name on card</label>
+                  <input type="text" class="form-control" id="card-name" required>
+                  <small class="text-muted">Full name as displayed on card</small>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="card-number">Credit card number</label>
+                  <input type="text" class="form-control" id="card-number" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 mb-3">
+                  <label for="card-expiration">Expiration</label>
+                  <input type="text" class="form-control" id="card-expiration" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="card-cvv">CVV</label>
+                  <input type="text" class="form-control" id="card-cvv" required>
+                </div>
+              </div>
+              <hr class="mb-4">
+              <button class="btn btn-primary btn-block btn-lg" type="submit">Continue to checkout</button>
+            </form>
+          </div>  
       </main>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
